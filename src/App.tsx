@@ -1170,9 +1170,12 @@ export default function App() {
 
   const nextScene = () => setScene(prev => prev + 1);
 
+  const musicElement = <audio ref={audioRef} src="/music.mp3" loop preload="auto" />;
+
   if (loading || !started) {
       return (
           <div className="fixed inset-0 bg-[#030014] z-[100] flex flex-col items-center justify-center overflow-hidden">
+               {musicElement}
                <ColorfulBlobs />
                <div className="relative z-10 text-center">
                    <motion.div 
@@ -1215,7 +1218,7 @@ export default function App() {
 
   return (
     <div className="relative min-h-screen bg-[#030014] overflow-hidden">
-      <audio ref={audioRef} src="/music.mp3" loop preload="auto" />
+      {musicElement}
       <div className="noise" />
       <HeartCursor />
       <ProgressBar current={scene} total={10} />
