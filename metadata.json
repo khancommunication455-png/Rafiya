@@ -1,0 +1,8 @@
+{
+  "name": "Zain & Rafiya's Birthday Journey",
+  "description": "A cinematic, interactive romantic birthday experience for Rafiya, from Zain.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
